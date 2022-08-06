@@ -25,3 +25,13 @@ def test_4():
     entrada = leArquivo('./Testes/T4.txt')
     saida = 'Faz nada'
     assert entrada == saida
+
+# Ocorre erro pois a data do arquivo armazenada no Pen-drive não pode
+# ser mais atual do que a do arquivo presente no HD
+def test_5():
+    entrada = leArquivo('./Testes/T5.txt')
+    saida = 'Erro'
+    assert entrada == saida
+    
+
+    

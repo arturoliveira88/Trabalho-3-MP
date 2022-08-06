@@ -1,6 +1,6 @@
 temBackup: V
 fazBackup: V
-arqEHD: - V
+arqEHD: V
 arqEPenDrive: V
 dataPen<HD: F
 dataPen==HD: V
