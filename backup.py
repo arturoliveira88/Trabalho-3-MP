@@ -29,3 +29,11 @@ def leArquivo(path):
     # ser mais atual do que a do arquivo presente no HD
     if lista[1][-1] == 'V' and lista[2][-1] == 'V' and lista[3][-1] == 'V' and lista[6][-1] == 'V':
         return 'Erro'
+     
+    # Ocorre erro pois não há solicitação de backup do arquivo do HD para
+    # o Pen-drive
+    if lista[1][-1] == 'F' and lista[2][-1] == 'V' and lista[3][-1] == 'F':
+        return 'Erro'
+    
+    
+    

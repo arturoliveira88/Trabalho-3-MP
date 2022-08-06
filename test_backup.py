@@ -33,5 +33,12 @@ def test_5():
     saida = 'Erro'
     assert entrada == saida
     
-
+# Ocorre erro pois não há solicitação de backup do arquivo do HD para
+# o Pen-drive
+def test_6():
+    entrada = leArquivo('./Testes/T6.txt')
+    saida = 'Erro'
+    assert entrada == saida
     
+
+        
