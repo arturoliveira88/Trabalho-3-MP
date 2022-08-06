@@ -18,3 +18,10 @@ def test_3():
     entrada = leArquivo('./Testes/T3.txt')
     saida = 'Copia de HD para Pen-drive'
     assert entrada == saida
+    
+# Nada é feito, pois os dois dispositivos já possuem o mesmo arquivo
+# com a mesma data
+def test_4():
+    entrada = leArquivo('./Testes/T4.txt')
+    saida = 'Faz nada'
+    assert entrada == saida
