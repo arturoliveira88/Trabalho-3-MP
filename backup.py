@@ -35,5 +35,8 @@ def leArquivo(path):
     if lista[1][-1] == 'F' and lista[2][-1] == 'V' and lista[3][-1] == 'F':
         return 'Erro'
     
-    
+    # Ocorre erro pois não há solicitação de backup e não é possível
+    # retaurar um arquivo mais atual que o anterior
+    if lista[1][-1] == 'F' and lista[2][-1] == 'V' and lista[3][-1] == 'V' and lista[4][-1] == 'V':
+        return 'Erro'
     

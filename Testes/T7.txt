@@ -1,0 +1,7 @@
+temBackup: V
+fazBackup: F
+arqEHD: V
+arqEPenDrive: V
+dataPen<HD: V
+dataPen==HD: F
+dataPen>HD: F

@@ -40,5 +40,11 @@ def test_6():
     saida = 'Erro'
     assert entrada == saida
     
-
+# Ocorre erro pois não há solicitação de backup e não é possível
+# retaurar um arquivo mais atual que o anterior
+def test_7():
+    entrada = leArquivo('./Testes/T7.txt')
+    saida = 'Erro'
+    assert entrada == saida
+        
         
