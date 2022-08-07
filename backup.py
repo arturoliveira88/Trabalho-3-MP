@@ -44,4 +44,6 @@ def leArquivo(path):
     # a mesma data e não há solicitação de backup
     if lista[1][-1] == 'F' and lista[2][-1] == 'V' and lista[3][-1] == 'V' and lista[5][-1] == 'V':
         return 'Faz nada'
-    
+
+    if lista[1][-1] == 'F' and lista[2][-1] == 'V' and lista[3][-1] == 'V' and lista[6][-1] == 'V':
+        return 'Faz nada'
