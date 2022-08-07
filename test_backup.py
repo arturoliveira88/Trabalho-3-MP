@@ -46,5 +46,13 @@ def test_7():
     entrada = leArquivo('./Testes/T7.txt')
     saida = 'Erro'
     assert entrada == saida
+    
+# Nada é feito pois os arquivos presentes nos dois dispositivos têm
+# a mesma data e não há solicitação de backup
+def test_8():
+    entrada = leArquivo('./Testes/T8.txt')
+    saida = 'Faz nada'
+    assert entrada == saida
+
         
         

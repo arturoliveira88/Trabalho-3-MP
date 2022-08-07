@@ -40,3 +40,8 @@ def leArquivo(path):
     if lista[1][-1] == 'F' and lista[2][-1] == 'V' and lista[3][-1] == 'V' and lista[4][-1] == 'V':
         return 'Erro'
     
+    # Nada é feito pois os arquivos presentes nos dois dispositivos têm
+    # a mesma data e não há solicitação de backup
+    if lista[1][-1] == 'F' and lista[2][-1] == 'V' and lista[3][-1] == 'V' and lista[5][-1] == 'V':
+        return 'Faz nada'
+    
