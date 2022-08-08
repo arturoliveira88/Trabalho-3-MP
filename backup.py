@@ -64,3 +64,7 @@ def leArquivo(path):
     # arquivos a serem transferidos 
     if lista[1][-1] == 'F' and lista[2][-1] == 'F' and lista[3][-1] == 'F':
         return 'Erro'
+    
+    # Restaura arquivo presente no Pen-drive e ausente no HD
+    if lista[1][-1] == 'F' and lista[2][-1] == 'F' and lista[3][-1] == 'V':
+        return 'Copia de Pen-drive para HD'

@@ -1,12 +1,12 @@
 from backup import leArquivo
 
-# Verifica se há Backup.parm -----------------------------------------
+# Verifica se há Backup.parm
 def test_1():
     entrada = leArquivo('./Testes/T1.txt')
     saida = 'Impossível'
     assert entrada == saida
 
-# Copia o arquivo do presente no HD para o Pen-drive -----------------
+# Copia o arquivo do presente no HD para o Pen-drive
 def test_2():
     entrada = leArquivo('./Testes/T2.txt')
     saida = 'Copia de HD para Pen-drive'
@@ -80,4 +80,10 @@ def test_11():
 def test_12():
     entrada = leArquivo('./Testes/T12.txt')
     saida = 'Erro'
+    assert entrada == saida
+    
+# Restaura arquivo presente no Pen-drive e ausente no HD
+def test_13():
+    entrada = leArquivo('./Testes/T13.txt')
+    saida = 'Copia de Pen-drive para HD'
     assert entrada == saida
