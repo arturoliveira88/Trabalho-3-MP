@@ -54,9 +54,17 @@ def test_8():
     saida = 'Faz nada'
     assert entrada == saida
 
+# É feita a retauração do arquivo do Pen-drive para o HD pois
+# seu arquivo é mais atual não há solicitção de backup
 def test_9():
     entrada = leArquivo('./Testes/T9.txt')
     saida = 'Copia de Pen-drive para HD'
     assert entrada == saida
-        
-        
+
+# Ocorre erro pois o arquivo não está presente em nenhum dos
+# dispositivos e é solicitado o backup
+def test_10():
+    entrada = leArquivo('./Testes/T10.txt')
+    saida = 'Erro'
+    assert entrada == saida
+                

@@ -44,6 +44,13 @@ def leArquivo(path):
     # a mesma data e não há solicitação de backup
     if lista[1][-1] == 'F' and lista[2][-1] == 'V' and lista[3][-1] == 'V' and lista[5][-1] == 'V':
         return 'Faz nada'
-
+    
+    # É feita a retauração do arquivo do Pen-drive para o HD pois
+    # seu arquivo é mais atual não há solicitção de backup  
     if lista[1][-1] == 'F' and lista[2][-1] == 'V' and lista[3][-1] == 'V' and lista[6][-1] == 'V':
         return 'Copia de Pen-drive para HD'
+    
+    # Ocorre erro pois o arquivo não está presente em nenhum dos
+    # dispositivos e é solicitado o backup
+    if lista[1][-1] == 'V' and lista[2][-1] == 'F' and lista[3][-1] == 'F':
+        return 'Erro'
