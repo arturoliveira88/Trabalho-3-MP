@@ -1,5 +1,17 @@
 def leArquivo(path):
     
+    """
+    Função que lê e interpreta caracteristicas do arquivo
+    
+    Recebe:
+        :path: String referente ao caminho do arquivo.
+    
+    Retorna:
+        :: Mensagem em string especificando o fenômeno ocorrido.
+    
+    """
+
+    
     A = open(path, 'r')
     lista = []
     
