@@ -67,8 +67,17 @@ def test_10():
     entrada = leArquivo('./Testes/T10.txt')
     saida = 'Erro'
     assert entrada == saida
-                
+     
+# Nada é feito pois o arquivo a ser transferido por backup já está
+# armazenado no Pen-drive     
 def test_11():
     entrada = leArquivo('./Testes/T11.txt')
     saida = 'Faz nada'
+    assert entrada == saida
+    
+# Ocorre erro pois há Backup.parm mas não solicitação de backup nem
+# arquivos a serem transferidos
+def test_12():
+    entrada = leArquivo('./Testes/T12.txt')
+    saida = 'Erro'
     assert entrada == saida

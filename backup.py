@@ -59,3 +59,8 @@ def leArquivo(path):
     # armazenado no Pen-drive
     if lista[1][-1] == 'V' and lista[2][-1] == 'F' and lista[3][-1] == 'V':
         return 'Faz nada'
+    
+    # Ocorre erro pois há Backup.parm mas não solicitação de backup nem
+    # arquivos a serem transferidos 
+    if lista[1][-1] == 'F' and lista[2][-1] == 'F' and lista[3][-1] == 'F':
+        return 'Erro'
