@@ -68,3 +68,7 @@ def test_10():
     saida = 'Erro'
     assert entrada == saida
                 
+def test_11():
+    entrada = leArquivo('./Testes/T11.txt')
+    saida = 'Faz nada'
+    assert entrada == saida

@@ -54,3 +54,8 @@ def leArquivo(path):
     # dispositivos e é solicitado o backup
     if lista[1][-1] == 'V' and lista[2][-1] == 'F' and lista[3][-1] == 'F':
         return 'Erro'
+    
+    # Nada é feito pois o arquivo a ser transferido por backup já está
+    # armazenado no Pen-drive
+    if lista[1][-1] == 'V' and lista[2][-1] == 'F' and lista[3][-1] == 'V':
+        return 'Faz nada'
