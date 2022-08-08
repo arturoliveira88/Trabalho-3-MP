@@ -54,5 +54,9 @@ def test_8():
     saida = 'Faz nada'
     assert entrada == saida
 
+def test_9():
+    entrada = leArquivo('./Testes/T9.txt')
+    saida = 'Copia de Pen-drive para HD'
+    assert entrada == saida
         
         

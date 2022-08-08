@@ -46,4 +46,4 @@ def leArquivo(path):
         return 'Faz nada'
 
     if lista[1][-1] == 'F' and lista[2][-1] == 'V' and lista[3][-1] == 'V' and lista[6][-1] == 'V':
-        return 'Faz nada'
+        return 'Copia de Pen-drive para HD'
